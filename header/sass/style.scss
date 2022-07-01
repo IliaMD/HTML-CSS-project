@@ -4,14 +4,17 @@ $color: #ef7f04;
 $dark: #3b3a63;
 $white: #ffffff;
 $text: #2f2f51;
+$grey: #f2f2f2;
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: $grey;
 }
 
 .header {
   display: flex;
   padding: 17px 0;
+  background-color: $white;
 
   &-menu {
     display: flex;
@@ -56,7 +59,7 @@ body {
   display: flex;
   width: 1200px;
   margin: auto;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .services-container {
@@ -182,5 +185,73 @@ body {
   &-description {
     width: 332px;
     font-size: 16px;
+  }
+}
+
+.products {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 103px auto 48px auto;
+  font-size: 24px;
+  font-weight: 700;
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 70px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 503px;
+
+    .menu-items {
+      width: 130px;
+      height: 39px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: $color;
+        color: $white;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 511px;
+    padding: 68px 32px 52px;
+    background-color: $white;
+
+    .content__text {
+      line-height: 1.5;
+      width: 354px;
+    }
+  }
+}
+
+.content {
+  &__title {
+    font-size: 36px;
+    color: $color;
+    font-weight: 700;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  &-description {
+    font-size: 18px;
+    font-weight: 700;
+
+    p {
+      margin-bottom: 16px;
+    }
   }
 }
