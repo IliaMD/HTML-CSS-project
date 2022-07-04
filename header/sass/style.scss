@@ -384,3 +384,57 @@ body {
     }
   }
 }
+
+.guarantee {
+  margin-top: 54px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/header/img/quality-assurance__bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 56px;
+  }
+
+  &__title {
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 54px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__block {
+    max-width: 170px;
+    text-align: center;
+
+    img {
+      margin-bottom: 44px;
+      height: 90px;
+    }
+  }
+
+  .block__text {
+    color: $white;
+    margin-bottom: 69px;
+  }
+
+  &__button {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 256px;
+    background-color: $dark;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+    height: 54px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+}
