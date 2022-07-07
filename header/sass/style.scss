@@ -16,6 +16,10 @@ body {
   padding: 17px 0;
   background-color: $white;
 
+  .burger-menu {
+    display: none;
+  }
+
   &-menu {
     display: flex;
     align-items: center;
@@ -51,6 +55,31 @@ body {
       font-size: 13px;
       color: $white;
       width: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-menu {
+    display: none;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .header {
+    padding: 17px 56px 5px 56px;
+    .container {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .burger-menu {
+      display: block;
+      width: 56px;
+      height: 35px;
+      margin-right: 44px;
     }
   }
 }
@@ -184,15 +213,25 @@ body {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .feedback {
+    display: none;
+  }
+  .main-left {
+    width: 92%;
+  }
+}
+
 .container {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: auto;
   justify-content: center;
 }
 
 .services-container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -317,6 +356,18 @@ body {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-l1,
+  .card-l2,
+  .card-r1 {
+    margin-bottom: 35px;
+  }
+}
+
 .products {
   display: flex;
   text-align: center;
@@ -362,6 +413,12 @@ body {
       width: 354px;
     }
   }
+}
+
+.product__img {
+  max-width: 567px;
+  width: 100%;
+  height: auto;
 }
 
 .content {
