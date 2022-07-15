@@ -375,6 +375,7 @@ body {
   margin: 103px auto 48px auto;
   font-size: 24px;
   font-weight: 700;
+  color: $text;
 
   &-menu {
     display: flex;
@@ -385,6 +386,7 @@ body {
     font-size: 18px;
     margin-bottom: 30px;
     max-width: 503px;
+    color: $text;
 
     .menu-items {
       width: 130px;
@@ -494,4 +496,113 @@ body {
     font-weight: 700;
     margin-bottom: 50px;
   }
+}
+
+.about {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 103px auto 48px auto;
+  font-size: 24px;
+  font-weight: 700;
+  color: $text;
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 70px;
+    font-size: 18px;
+    margin-bottom: 35px;
+    max-width: 650px;
+    color: $text;
+
+    .menu-items {
+      min-width: 150px;
+      height: 39px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      &:hover {
+        background-color: $color;
+        color: $white;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+  }
+}
+
+.content {
+  &-logo {
+    width: 192px;
+    height: 139px;
+    padding: 46px 0 0 50px;
+  }
+
+  &-text {
+    padding: 61px 52px 0 248px;
+    max-width: 304px;
+    line-height: 1.5;
+  }
+}
+
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.feature {
+  display: flex;
+  width: 360px;
+  margin-bottom: 100px;
+  padding: 10px 0 0 10px;
+
+  img {
+    height: 75px;
+    margin-right: 23px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-title {
+    font-weight: 700;
+    color: $text;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+    line-height: 1.5;
+    width: 235px;
+  }
+}
+
+.button-request {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 54px;
+  border-radius: 3px;
+  border: none;
+  background-color: $color;
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+  width: 312px;
+  margin-bottom: 1000px;
 }
