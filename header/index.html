@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    />
   </head>
   <body>
     <div class="header">
@@ -23,7 +22,7 @@
             <span></span>
             <span></span>
           </button>
-          <img src="img/haeder-logo.png" alt="Логотип" />
+          <img class="logo" src="img/haeder-logo.png" alt="Логотип" />
         </div>
 
         <ul class="header-menu">
@@ -180,34 +179,37 @@
       </ul>
     </div>
     <div class="container">
-      <img
-        class="product__img"
-        src="/header/img/products.png"
-        alt="Продукция"
-      />
-      <div class="products-content">
-        <h2 class="content__title">Rehau Blitz New</h2>
+      <div class="products-container">
+        <img
+          class="product__img"
+          src="/header/img/products.png"
+          alt="Продукция"
+        />
+        <div class="products-content">
+          <h2 class="content__title">Rehau Blitz New</h2>
 
-        <p class="content__text">
-          Сохраняют тепло в доме, защищают от шума и вписываются в любой
-          интерьер. Практичный выбор
-        </p>
-        <div class="content-description">
-          <p>
-            Cистемная глубина
-            ...............................................60/60 мм
+          <p class="content__text">
+            Сохраняют тепло в доме, защищают от шума и вписываются в любой
+            интерьер. Практичный выбор
           </p>
-          <p>
-            Ширина стеклопакета...........................................24/31
-            мм
-          </p>
-          <p>
-            Воздушные камеры...............................................3
-          </p>
-          <p>
-            Теплосопротивление............................................0,70
-            м2С/ВТ
-          </p>
+          <ul class="content-description">
+            <li>
+              Cистемная глубина
+              <span class="value"> 60/60 мм</span>
+            </li>
+            <li>
+              Ширина стеклопакета
+              <span class="value">24/31 мм</span>
+            </li>
+            <li>
+              Воздушные камеры
+              <span class="value">3</span>
+            </li>
+            <li>
+              Теплосопротивление
+              <span class="value">0,70 м2С/ВТ</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -291,9 +293,12 @@
           сделали правильный выбор.
         </p>
       </div>
-      <div class="content__img">
-        <img src="/header/img/content__img.png" alt="О компании" />
-      </div>
+
+      <img
+        class="about__img"
+        src="/header/img/content__img.png"
+        alt="О компании"
+      />
     </div>
 
     <div class="container">
@@ -373,8 +378,14 @@
           <details class="questions-answer">
             <summary class="questions-question">
               Сколько по времени занимает изготовление пластиковых окон?
+              <input class="arrow" type="checkbox" id="string1" /><label
+                class="active"
+                for="string1"
+              >
+                <img src="/header/img/arrow.png" alt=""
+              /></label>
             </summary>
-            от недели до одного рабочего месяца
+            <p>от недели до одного рабочего месяца</p>
           </details>
         </div>
 
@@ -382,8 +393,14 @@
           <details class="questions-answer">
             <summary class="questions-question">
               Какие существуют способы оплаты?
+              <input class="arrow" type="checkbox" id="string2" /><label
+                class="active"
+                for="string2"
+              >
+                <img src="/header/img/arrow.png" alt=""
+              /></label>
             </summary>
-            Любые
+            <p>Любые</p>
           </details>
         </div>
 
@@ -391,8 +408,14 @@
           <details class="questions-answer">
             <summary class="questions-question">
               Где я могу посмотреть образцы?
+              <input class="arrow" type="checkbox" id="string3" /><label
+                class="active"
+                for="string3"
+              >
+                <img src="/header/img/arrow.png" alt=""
+              /></label>
             </summary>
-            В наших магазинах либо в интернете
+            <p>В наших магазинах либо в интернете</p>
           </details>
         </div>
 
@@ -400,8 +423,14 @@
           <details class="questions-answer">
             <summary class="questions-question">
               Хотелось бы отделать балкон. Поможете?
+              <input class="arrow" type="checkbox" id="string4" /><label
+                class="active"
+                for="string4"
+              >
+                <img src="/header/img/arrow.png" alt=""
+              /></label>
             </summary>
-            Конечно
+            <p>Конечно</p>
           </details>
         </div>
 
@@ -409,8 +438,14 @@
           <details class="questions-answer">
             <summary class="questions-question">
               Мне надо нанимать грузчиков для подъема?
+              <input class="arrow" type="checkbox" id="string5" /><label
+                class="active"
+                for="string5"
+              >
+                <img src="/header/img/arrow.png" alt=""
+              /></label>
             </summary>
-            Нет, команда мастеров все сами аккуратно доставят и внесут.
+            <p>Нет, команда мастеров все сами аккуратно доставят и внесут.</p>
           </details>
         </div>
       </div>
@@ -420,7 +455,7 @@
       <h2 class="contacts-title">Контакты</h2>
       <div class="container">
         <div class="contacts-content">
-          <h3 class="content-title">Бесплатная консультация</h3>
+          <h3 class="content-title">Бесплатная консультация:</h3>
           <div class="content-call">
             <img src="/header/img/call.png" alt="Звонок" />
             <a href="">8 (4932) 34 - 31 - 40</a>
